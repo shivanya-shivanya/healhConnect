@@ -21,6 +21,7 @@ const AppNavigator = () => {
         <Stack.Screen name={'Policy'} component={screens.Policy} options={{ headerShown: false }} />
         <Stack.Screen name={'Claim'} component={screens.Claim} options={{ headerShown: false }} />
         <Stack.Screen name={'More'} component={screens.More} options={{ headerShown: false }} />
+        <Stack.Screen name={'DetailScreen'} component={screens.DetailScreen} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   )

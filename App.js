@@ -5,6 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 import { NavigationContainer } from '@react-navigation/native';
 import messaging from '@react-native-firebase/messaging';
 import AppNavigator from './src/navigation/AppNavigator';
+import Toast from 'react-native-toast-message';
 
 const App = () => {
   const { PipModule } = NativeModules;
@@ -45,8 +46,10 @@ const App = () => {
     // <View style ={{flex:1,alignSelf:'center',justifyContent:'center'}}>
     //   <Text>Hello</Text>
     // </View>
-    <AppNavigator/>
-
+    <>
+      <AppNavigator />
+      <Toast />
+    </>
   )
 }
 

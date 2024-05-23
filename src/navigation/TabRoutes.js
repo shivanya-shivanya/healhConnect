@@ -44,8 +44,8 @@ const TabRoutes = (props) => {
                 options={{
                     tabBarIcon: ({ focused }) => {
                         return (
-                            focused ? <Image source={imagePath.secondActiveIcon} style={{ height: 20, width: 20, resizeMode: 'contain' }} /> :
-                                <Image source={imagePath.secondInActiveIcon} style={{ height: 20, width: 20, resizeMode: 'contain', }} />
+                            focused ? <Image source={imagePath.secondActiveIcon} style={{ height: 30, width: 30, resizeMode: 'contain' }} /> :
+                                <Image source={imagePath.secondInActiveIcon} style={{ height: 30, width: 30, resizeMode: 'contain', }} />
                         )
                     }
 

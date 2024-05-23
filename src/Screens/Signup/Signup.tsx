@@ -3,6 +3,7 @@ import React from 'react'
 import auth from '@react-native-firebase/auth'
 import { useNavigation } from '@react-navigation/native';
 import { GoogleSignin } from '@react-native-google-signin/google-signin';
+import Toast from 'react-native-toast-message';
 
 const Signup = () => {
     const [email, setEmail] = React.useState('');
@@ -23,7 +24,11 @@ const Signup = () => {
         // Get the users ID token
         const { idToken,user } = await GoogleSignin.signIn();
         console.log("in google signin 22",user)
-        Alert.alert(`Welcome ${user?.givenName}`);
+        Toast.show({
+            type: 'success',
+            text1: `Login Successfully!`,
+            text2:`welcome! ${user?.givenName}`
+          });
         navigation.navigate('TabRoutes')
         // Create a Google credential with the token
         const googleCredential = auth.GoogleAuthProvider.credential(idToken);
@@ -32,7 +37,12 @@ const Signup = () => {
         return auth().signInWithCredential(googleCredential);
       
         } catch (error) {
-            console.log("in google signin error",error)
+            console.log("in google signin error",error);
+            Toast.show({
+                type: 'error',
+                text1: `Something went wrong. Please try again!`,
+                text2:`welcome ${user?.email}`
+              });
         }
      
     }

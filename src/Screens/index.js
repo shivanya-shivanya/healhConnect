@@ -4,4 +4,5 @@ export {default as Home} from './Home/Home'
 export {default as Policy} from './Policy/Policy'
 export {default as Claim} from './Claim/Claim'
 export {default as More} from './More/More'
+export {default as DetailScreen} from './DetailScreen/DetailScreen'
 
