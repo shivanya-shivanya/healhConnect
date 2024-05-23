@@ -25,7 +25,7 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
-target 'BridgingDemo' do
+target 'HealthConnectApp' do
   config = use_native_modules!
 
   use_react_native!(
@@ -44,7 +44,7 @@ target 'BridgingDemo' do
   pod 'GoogleUtilities', :modular_headers => true
   pod 'FirebaseCore', :modular_headers => true
 
-  target 'BridgingDemoTests' do
+  target 'HealthConnectAppTests' do
     inherit! :complete
     # Pods for testing
   end
