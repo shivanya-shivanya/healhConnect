@@ -41,7 +41,7 @@ const Signup = () => {
             Toast.show({
                 type: 'error',
                 text1: `Something went wrong. Please try again!`,
-                text2:`welcome ${user?.email}`
+              
               });
         }
      

@@ -75,10 +75,10 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.healthconnect.app"
+    namespace "com.bridgingdemo"
     defaultConfig {
-        applicationId "com.healthconnect.app"
-        minSdkVersion rootProject.ext.minSdkVersion
+        applicationId "com.bridgingdemo"
+        minSdkVersion 26
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 2
         versionName "2.0"
